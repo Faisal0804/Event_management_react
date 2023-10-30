@@ -1,0 +1,54 @@
+.TopFixedBanner{
+    background: url("../img/banner.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+}
+.TopBannerOverlay{
+
+    min-height: 500px;
+    width:100%;
+    background: rgba(0, 0, 0,0.7);
+
+}
+.BannerContent{
+  
+
+    
+}
+.BannerTitle{
+    margin-top: 12rem;
+    font-family: 'Montserreat',sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 40px;
+
+}
+.BannerSubTitle{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+    
+
+.BannerLink{
+    background:rgb(154, 154, 87);
+    display: inline-block;
+    color: #ffffff;
+    border:1px solid #ddd;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+.BannerLink:hover{
+    color:rgb(148, 148, 199);
+    background-color: #fff;
+    border-radius: 20%;
+    
+}
