@@ -52,3 +52,28 @@
     border-radius: 20%;
     
 }
+.AboutMian{
+    margin-top: 8rem;
+    
+}
+
+.AboutTitle{
+    color:red;
+}
+.AboutLinkOne{
+    background-color: brown;
+    display: inline-block;
+    width: 150px;
+    padding: 8px 5px;
+    color:white;
+    margin-right: 2rem;
+
+}
+.AboutLinkTwo{
+    background-color: seagreen;
+    display: inline-block;
+    width: 150px;
+    padding: 8px 5px;
+
+    color:white;
+}
