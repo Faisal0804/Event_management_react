@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
-import "../../assets/css/custom.css"
-import "../../assets/css/bootstrap.min.css"
+
 import { Container,Row,Col} from 'react-bootstrap'
 
 const TopFixedBannner = () => {

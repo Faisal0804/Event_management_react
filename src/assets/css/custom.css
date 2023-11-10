@@ -77,3 +77,59 @@
 
     color:white;
 }
+
+
+.navBackground{ 
+    -webkit-transition:background-color 400ms linear ;
+    -moz-transition:background-color 400ms linear ;
+    -o-transition:background-color 400ms linear ;
+    transition:background-color 400ms linear ;
+   
+    background-color: rgba(0,0,0,0.0)!important ;
+}
+
+.navBackgroundScroll{
+    -webkit-transition:background-color 400ms linear ;
+    -moz-transition:background-color 400ms linear ;
+    -o-transition:background-color 400ms linear ;
+    transition:background-color 400ms linear ;
+    
+
+    background-color: #ffffff !important;
+}
+
+
+.navItem{
+    color:#ffffff !important;
+    font-family: 'Raleway',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+.navBarItemScroll{
+    color:#000 !important;
+    font-family: 'Raleway',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.navTitle{
+    margin-left: 5rem;
+    font-family: 'Montserreat',sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    color:#ffffff !important;
+}
+
+.navTitleScroll{
+    margin-left: 5rem;
+    font-family: 'Montserreat',sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    color:#18A1C1 !important;
+}
+.navBarMain{
+    margin-left: 25rem;
+
+}
