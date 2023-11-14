@@ -5,6 +5,7 @@ import './App.css'
 import TopFixedBannner from './Components/TopFixedBannner/TopFixedBannner'
 import About from './Components/About/About'
 import TopNavigation from './Components/TopNavigation/TopNavigation'
+import Features from './Components/Features/Features'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
       <TopNavigation/>
       <TopFixedBannner/> 
       <About/>
+      <Features/>
     </>
   )
 }

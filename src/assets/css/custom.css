@@ -133,3 +133,35 @@
     margin-left: 25rem;
 
 }
+
+
+.FeaturesFixedBanner{
+    background: url("../img/features.jpg");
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+}
+
+.FeaturesBannerOverlay{
+
+    min-height: 400px;
+    width:100%;
+    background: rgba(0, 0, 0,0.7);
+
+}
+
+.MainCard{
+    margin-top: 3.5rem;
+    margin-right: 2px;
+}
+
+.img{
+    width: 20px;
+    height: 50px;
+  
+}
