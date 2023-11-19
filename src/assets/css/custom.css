@@ -165,3 +165,18 @@
     height: 50px;
   
 }
+.SummaryMain{
+padding-top: 12rem;
+}
+.SummaryCount{
+    color: #fff;
+    font-size: 40px;
+}
+.SummaryDesk{
+    color:burlywood;
+    font-size: 24px;
+    font-family: 'Montserreat',sans-serif;
+    font-weight: 600;
+
+
+}
