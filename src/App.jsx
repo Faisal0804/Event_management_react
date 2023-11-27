@@ -7,6 +7,7 @@ import About from './Components/About/About'
 import TopNavigation from './Components/TopNavigation/TopNavigation'
 import Features from './Components/Features/Features'
 import Summary from './Components/Summary/Summary'
+import Analysis from './Components/Analysis/Analysis'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +17,8 @@ function App() {
       <TopNavigation/>
       <TopFixedBannner/> 
       <About/>
-      <Summary/>
+   
+      <Analysis/>
     </>
   )
 }
