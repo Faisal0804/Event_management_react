@@ -10,6 +10,8 @@ import Summary from './Components/Summary/Summary'
 import Analysis from './Components/Analysis/Analysis'
 import Testimonial from './Components/Testimonial/Testimonial'
 import Reviews from './Components/Reviews/Reviews'
+import SideBar from './Components/SideBar/SideBar'
+import Contact from './Components/Contact/Contact'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,8 +22,8 @@ function App() {
       <TopFixedBannner/> 
       <About/>
       <Analysis/>
-      <Testimonial/>
-      <Reviews/>
+      <Contact/>
+      
     </>
   )
 }
