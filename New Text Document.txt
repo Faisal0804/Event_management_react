@@ -1,0 +1,39 @@
+Animating Elements-->
+
+animate={{ fontSize: 20, color: '#ff2994', x: 10, y: -100 }}
+
+ animate={{ scale: 1.5 }}
+ animate={{ fontSize: 50, color: '#ff2994', x: 10, y: -100 }}
+
+
+Initial Animation State-->
+initial-->from
+animate-->to
+
+x: '-1000vw'-->ini
+x: 0-->animate
+
+ Transition Options
+
+
+ transition={{ delay: .5, duration: 1.5 }}
+
+transition={{ delay: 0.2, type: 'spring', stiffness: 120 }}
+
+
+Hover Animations-->
+
+ whileHover={{ 
+                                scale: 1.3, 
+                                textShadow: "0px 0px 8px rgb(255,255,255)",
+                                boxShadow: "0px 0px 8px rgb(255,255,255)",
+           }}
+
+
+
+
+
+  whileHover={{ scale: 1.1, originX: 0, color: '#f8e112' }}
+
+
+

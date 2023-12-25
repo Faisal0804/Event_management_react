@@ -6,9 +6,24 @@ import {faPlayCircle} from "@fortawesome/free-solid-svg-icons"
 
 import Poster from "../../assets/img/about1.jpg"
 import { Player, BigPlayButton, ControlBar ,ReplayControl,ForwardControl,VolumeMenuButton} from 'video-react';
-
+import { motion } from "framer-motion"
 
 const TopFixedBannner = () => {
+
+    const buttonVariants = {
+        // visible: {
+        //   x: [0, -20, 20, -20, 20, 0],
+        //   transition: { delay: 2 }
+        // },
+        hover: {
+          scale: 1.5,
+          textShadow: "0px 0px 8px rgb(255,255,255)",
+          boxShadow: "0px 0px 8px rgb(255,255,255)",
+          transition: {
+            duration: .5
+          }
+        }
+      }
 
   const [show, setShow] = useState(false);
 
@@ -21,9 +36,29 @@ const TopFixedBannner = () => {
                 <Container  className="BannerContent">
                     <Row >
                         <Col sm={12} md={12} lg={12}>
-                            <h1 className='BannerTitle'>Welcome our Website</h1>
-                            <p className="BannerSubTitle">Lorem ipsum dolor sit amet.</p>
-                            <a className='BannerLink' href=''>Details</a>
+                            <motion.h1 className='BannerTitle'
+                               initial={{ opacity:0,x: '-100vw' }}
+                               animate={{ opacity: 5,x: 0 ,fontSize: 50, color: '#ff2994'}}
+                               transition={{ delay: .2, duration: 2.5 }}
+                            
+                            
+                            >Welcome our Website
+                            
+                            </motion.h1>
+                            <motion.p 
+
+                              variants={buttonVariants}
+                              whileHover="hover"
+                            
+                            className="BannerSubTitle">Lorem ipsum dolor sit amet.</motion.p>
+                            <motion.a 
+                              whileHover={{ 
+                                scale: 1.5, 
+                                textShadow: "0px 0px 8px rgb(255,255,255)",
+                                boxShadow: "0px 0px 8px rgb(255,255,255)",
+                            }}
+                            
+                            className='BannerLink' href=''>Details</motion.a>
                             <p className="mt-2"><FontAwesomeIcon className="playBtn" onClick={handleShow}   icon={faPlayCircle} /></p>
 
                             <Modal size='sm'  show={show} onHide={handleClose} animation={false}>
@@ -40,9 +75,14 @@ const TopFixedBannner = () => {
                               </Player>
                                 </Modal.Body>
                                 <Modal.Footer>
-                                <Button   variant="info" onClick={handleClose}>
+                                <button   onClick={handleClose}
+                                
+                  s              
+                                           
+                                                                            
+                                >
                                     Close
-                                </Button>                               
+                                </button>                               
                                 </Modal.Footer>
                             </Modal>
                                                 
