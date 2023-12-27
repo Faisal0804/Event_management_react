@@ -1,0 +1,85 @@
+const containerVariants = {
+  hidden: { 
+    opacity: 0, 
+    x: '100vw',
+    transition: {
+      staggerChildren: 0.5,
+    } 
+  },
+  visible: { 
+    opacity: 1, 
+    x: 0,
+    transition: { 
+      type: 'spring',
+      mass: 0.4,
+      damping: 8,
+      staggerChildren: 0.4,
+      when: "beforeChildren",
+    }
+  },
+};
+
+const childVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+  }
+}
+
+
+ Keyframes-->
+
+
+const buttonVariants = {
+  // visible: {
+  //   x: [0, -20, 20, -20, 20, 0],
+  //   transition: { delay: 2 }
+  // },
+  hover: {
+    scale: [1, 1.1, 1, 1.1, 1, 1.1],
+    textShadow: "0px 0px 8px rgb(255,255,255)",
+    boxShadow: "0px 0px 8px rgb(255,255,255)",
+    transition: {
+      duration: .5
+    }
+  }
+}
+
+
+ Repeating Animations-->yoyo
+
+   yoyo->
+
+
+
+ Animate Presence-->
+
+const [showTitle, setShowTitle] = useState(true);
+  setTimeout(() => {
+    setShowTitle(false);
+  },4000 )
+
+
+-->
+
+<AnimatePresence>
+
+                {showTitle && (
+                   <motion.p className="AboutName "
+
+                   exit={{y: -1000 }}
+                   
+                   >ABOUT US</motion.p>
+                   )}
+                </AnimatePresence>x
+
+
+
+
+
+
+
+
+

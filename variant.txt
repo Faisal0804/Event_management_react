@@ -1,0 +1,32 @@
+const containerVariants = {
+    hidden: { 
+      opacity: 0, 
+      x: '100vw' 
+    },
+    visible: { 
+      opacity: 1, 
+      x: 0,
+      transition: { type: 'spring', delay: 0.5 }
+    },
+  };
+
+
+  const nextVariants = {
+    hidden: { 
+      x: '100vw' 
+    },
+    visible: {
+      x: 0,
+      transition: { type: 'spring', delay: 1.5,duration:1.5, stiffness: 120 }
+    } 
+  }
+
+
+
+
+
+
+
+
+
+
