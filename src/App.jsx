@@ -23,6 +23,7 @@ function App() {
       <TopNavigation/>
       <TopFixedBannner/>
       <About/>
+      <Reviews/>
       
     </>
   )

@@ -1,5 +1,6 @@
 import React, { Fragment,useState } from 'react'
 import { Container,Row,Col,Card } from 'react-bootstrap'
+import { motion } from "framer-motion"
 
 import Star from '../Star/Star'
 
@@ -24,6 +25,20 @@ const Reviews = ({ onChange }) => {
                 <Container>
                     <Row>
                         <Col sm={12} md={4} lg={4}>
+                            <motion.div
+                               viewport={{once:false}}
+                               initial={{opacity:0,x:-50}}
+                               whileInView={{opacity:1,x:0}}
+                               transition={{type:'easeIn',
+                               duration:1,
+                               delay:.3
+                              }}  
+
+
+
+                            
+                            
+                            >
 
                         <Card style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="holder.js/100px180" />
@@ -63,13 +78,26 @@ const Reviews = ({ onChange }) => {
                                </p>
                             </Card.Body>
                         </Card>
+                        </motion.div>
 
                         </Col>
 
 
                         <Col sm={12} md={4} lg={4}>
 
-<Card style={{ width: '18rem' }}>
+                          <motion.div
+
+                            viewport={{once:false}}
+                            initial={{opacity:0,x:100}}
+                            whileInView={{opacity:1,x:0}}
+                            transition={{type:'easeIn',
+                            duration:1,
+                            delay:.4
+                            }}  
+                          
+                          >
+
+     <Card style={{ width: '18rem' }}>
     <Card.Img variant="top" src="holder.js/100px180" />
     <Card.Body>
         <Card.Title>Card Title</Card.Title>
@@ -107,6 +135,7 @@ const Reviews = ({ onChange }) => {
        </p>
     </Card.Body>
 </Card>
+</motion.div>  
 
 </Col>
                     </Row>

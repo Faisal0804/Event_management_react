@@ -7,6 +7,8 @@ import {faPlayCircle} from "@fortawesome/free-solid-svg-icons"
 import Poster from "../../assets/img/about1.jpg"
 import { Player, BigPlayButton, ControlBar ,ReplayControl,ForwardControl,VolumeMenuButton} from 'video-react';
 import { motion } from "framer-motion"
+import cv from "../../assets/img/laavenir.pdf"
+
 
 const TopFixedBannner = () => {
 
@@ -51,6 +53,11 @@ const TopFixedBannner = () => {
                               whileHover="hover"
                             
                             className="BannerSubTitle">Lorem ipsum dolor sit amet.</motion.p>
+                             <a href={cv}
+                                 download="my cv"
+                                target="_blank" >download
+                                </a> 
+                            
                             <motion.a 
                               whileHover={{ 
                                 scale: 1.5, 
@@ -77,12 +84,13 @@ const TopFixedBannner = () => {
                                 <Modal.Footer>
                                 <button   onClick={handleClose}
                                 
-                  s              
+                             
                                            
                                                                             
                                 >
                                     Close
-                                </button>                               
+                                </button> 
+                                                            
                                 </Modal.Footer>
                             </Modal>
                                                 
